@@ -1,0 +1,112 @@
+/* Centrum.cz login — responsive overrides (mobile only) */
+/* Desktop (>= 640px) is intentionally left untouched. */
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    -webkit-text-size-adjust: 100%;
+    min-width: 0;
+  }
+
+  /* Stack the two-column row into a single column so the form is not pushed off-screen */
+  .fyUikv {
+    flex-direction: column !important;
+  }
+  .fyUikv > div:first-child {
+    flex: none !important;
+    width: 100% !important;
+    border-right: none !important;
+  }
+
+  /* Form: full width with tighter mobile margins */
+  .eXPstx {
+    width: calc(100% - 24px) !important;
+    min-width: 0 !important;
+    margin: 16px auto !important;
+  }
+  .eXPstx form {
+    width: 100%;
+  }
+
+  /* Inputs: 16px prevents iOS zoom-on-focus; larger touch target */
+  .dhTyxn,
+  .iAExBM {
+    font-size: 16px !important;
+    padding: 10px 15px !important;
+  }
+
+  /* Submit button: larger touch target */
+  .gLolWC {
+    height: 48px !important;
+    font-size: 16px !important;
+  }
+
+  /* Social login buttons: wrap and stay centered */
+  .kWXpWR {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    margin-bottom: 16px !important;
+  }
+  .kWXpWR > * {
+    margin-left: 8px !important;
+    margin-right: 8px !important;
+  }
+
+  /* Social buttons: minimum 44px touch target */
+  .kvvLgM,
+  .dwTaAu,
+  .DtxZq {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  /* Heading */
+  .jPuykN {
+    font-size: 24px !important;
+    line-height: 130% !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* Section titles and labels */
+  .dhwEXS {
+    font-size: 16px !important;
+    margin-bottom: 16px !important;
+  }
+  .irmpUx {
+    font-size: 14px !important;
+    margin-bottom: 4px !important;
+  }
+  .fDiVol,
+  .hnwkKI,
+  .kjAqPx,
+  .hcuujG,
+  .bocHMZ {
+    font-size: 14px !important;
+  }
+
+  /* Footer links: centered, wrapped, tighter padding */
+  .gVEYII {
+    padding: 16px 12px !important;
+    text-align: center !important;
+  }
+  .gVEYII ul {
+    gap: 8px !important;
+  }
+  .gVEYII li {
+    margin-bottom: 12px !important;
+  }
+
+  /* Card: edge-to-edge on mobile, no radius change */
+  .fFaBJV {
+    margin: 0 !important;
+  }
+}
